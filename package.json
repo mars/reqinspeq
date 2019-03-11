@@ -1,0 +1,21 @@
+{
+  "name": "reqinspeq",
+  "version": "1.0.0",
+  "description": "Web listener that logs complete HTTP requests for inspection",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "http",
+    "request",
+    "debug",
+    "inspect"
+  ],
+  "author": "Mars Hall",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4"
+  }
+}
