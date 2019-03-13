@@ -6,14 +6,24 @@ A simple web listener that logs complete HTTP requests for inspection.
 Usage
 -----
 
+[![Deploy to Heroku](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
+
+Once deployed, follow the Heroku app logs using the [CLI](https://devcenter.heroku.com/articles/heroku-cli) to inspect incoming requests:
+
+```bash
+heroku logs --tail --app $APP_NAME
+```
+
+### Local Usage
+
 Clone this repo, then inside of it:
 
 ```
 npm install
-npm start
+PORT=3333 npm start
 ```
 
-Then, watch the output as requests arrive:
+Then, watch the output to inspect incoming requests:
 
 ```
 > reqinspeq@1.0.0 start /Users/mars.hall/Projects/reqinspeq

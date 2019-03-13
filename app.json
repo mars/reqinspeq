@@ -1,0 +1,10 @@
+{
+  "name": "reqinspeq",
+  "description": "A simple web listener that logs complete HTTP requests for inspection",
+  "keywords": [
+    "http",
+    "debug",
+    "tools"
+  ],
+  "repository": "https://github.com/mars/reqinspeq.git"
+}
