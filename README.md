@@ -20,7 +20,7 @@ Clone this repo, then inside of it:
 
 ```
 npm install
-PORT=3333 npm start
+PORT=3333 RESPONSE_STATUS=204 npm start
 ```
 
 Then, watch the output to inspect incoming requests:

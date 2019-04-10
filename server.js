@@ -2,6 +2,7 @@ const express = require('express');
 const bodyParser = require('body-parser')
 
 const port = process.env.PORT || 3333;
+const responseStatus = +(process.env.RESPONSE_STATUS || 200);
 
 const app = express();
 
@@ -25,7 +26,7 @@ ${headers.join("\n")}${req.body.constructor === Object && Object.keys(req.body).
 `);
 
   // Always respond successful.
-  res.sendStatus(200);
+  res.sendStatus(responseStatus);
 });
 
 app.listen(port, (err) => {
