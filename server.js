@@ -1,4 +1,5 @@
 const express = require('express');
+const cors = require('cors');
 const bodyParser = require('body-parser')
 
 const port = process.env.PORT || 3333;
@@ -6,6 +7,7 @@ const responseStatus = +(process.env.RESPONSE_STATUS || 200);
 
 const app = express();
 
+app.use(cors())
 app.use(bodyParser.raw({ type: "*/*" }))
 
 app.get('/inspeq-chunked-response', (req, res) => {
