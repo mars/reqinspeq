@@ -14,6 +14,12 @@ Once deployed, follow the Heroku app logs using the [CLI](https://devcenter.hero
 heroku logs --tail --app $APP_NAME
 ```
 
+### Routes
+
+The app will simply log the request for any path!
+
+`/inspeq-chunked-response` is a special path that will respond with a chunked response that sends a chunk per second, making it easy to observe if a particular web browser or client streams responses from an HTTP server.
+
 ### Local Usage
 
 Clone this repo, then inside of it:
